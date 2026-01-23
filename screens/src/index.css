@@ -1,0 +1,52 @@
+/**
+ * @fileoverview Global Styles - Emergency Evacuation Screens
+ * @description TailwindCSS base styles with custom scrollbar and animation utilities.
+ *              This file is the main entry point for all CSS in the application.
+ *
+ * @author EES Development Team
+ * @version 1.0.0
+ *
+ * Sections:
+ * 1. TailwindCSS Imports (base, components, utilities)
+ * 2. Custom Scrollbar Styles
+ * 3. Animation Utilities
+ */
+
+/* ============================================================
+ * TAILWINDCSS IMPORTS
+ * ============================================================ */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ============================================================
+ * CUSTOM SCROLLBAR STYLES
+ * For debug logs and overflow containers
+ * ============================================================ */
+.overflow-y-auto::-webkit-scrollbar {
+  width: 8px;
+}
+
+.overflow-y-auto::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+}
+
+.overflow-y-auto::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+}
+
+.overflow-y-auto::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+/* ============================================================
+ * GLOBAL ANIMATION UTILITIES
+ * Smooth scroll behavior for entire application
+ * ============================================================ */
+
+* {
+  scroll-behavior: smooth;
+}

@@ -1,0 +1,143 @@
+# ============================================================
+# Emergency Evacuation System (evac-system) - Git Ignore
+# AI-Powered Real-Time Building Evacuation Routing
+# ============================================================
+
+# --------------------------
+# Dependencies
+# --------------------------
+node_modules/
+server/node_modules/
+admin/node_modules/
+screens/node_modules/
+mock-services/node_modules/
+admin-old/node_modules/
+
+# --------------------------
+# Environment Variables
+# (Never commit sensitive data)
+# --------------------------
+.env
+.env.local
+.env.*.local
+server/.env
+admin/.env
+screens/.env
+mock-services/.env
+
+# --------------------------
+# Logs
+# --------------------------
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+logs/
+server/logs/
+
+# --------------------------
+# Runtime Data
+# --------------------------
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# --------------------------
+# Temporary & Generated Files
+# --------------------------
+temp_frames/
+server/temp_frames/
+local_storage/
+server/local_storage/
+
+# USRP generated files
+server/data_tx.txt
+server/utils/data_tx.txt
+server/utils/results.json
+
+# Screens USRP runtime files
+screens/data_rx.json
+screens/*.log
+
+# --------------------------
+# Python
+# --------------------------
+*.pyc
+__pycache__/
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
+
+# --------------------------
+# Generated Test Images
+# --------------------------
+mock-services/test-images/*.jpg
+mock-services/test-images/*.png
+
+# --------------------------
+# Lock Files (keep for consistency)
+# Uncomment if you want to ignore lock files
+# --------------------------
+# package-lock.json
+
+# --------------------------
+# OS Files
+# --------------------------
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# --------------------------
+# IDE / Editor
+# --------------------------
+.vscode/
+!.vscode/extensions.json
+!.vscode/settings.json
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.code-workspace
+
+# --------------------------
+# Build Outputs
+# --------------------------
+dist/
+build/
+*.tsbuildinfo
+.next/
+out/
+
+# --------------------------
+# Testing
+# --------------------------
+coverage/
+.nyc_output/
+*.lcov
+
+# --------------------------
+# Cache
+# --------------------------
+.npm
+.eslintcache
+.cache/
+.parcel-cache/
+.turbo
+
+# --------------------------
+# Backup Files
+# --------------------------
+*-backup-*/
+server-backup-*/
+screens-backup-*/
+admin-backup-*
