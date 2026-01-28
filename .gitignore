@@ -76,6 +76,7 @@ venv/
 # Generated Test Images
 # --------------------------
 mock-services/test-images/*.jpg
+mock-services/test-images/*.jpeg
 mock-services/test-images/*.png
 
 # --------------------------

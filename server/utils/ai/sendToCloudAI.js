@@ -71,7 +71,12 @@ export const callCloudAI = async ({ cloudUrl, cameraId, edgeId }) => {
     const resp = await axios.post(
       endpoint,
       { imageUrl: cloudUrl, cameraId, edgeId },
-      { timeout: CLOUD_AI_TIMEOUT }
+      { 
+        timeout: CLOUD_AI_TIMEOUT,
+        headers: {
+          "Authorization": `Bearer ${process.env.AI_API_KEY}`
+        }
+      }
     );
     return resp.data;
   } catch (err) {

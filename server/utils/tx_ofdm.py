@@ -90,7 +90,7 @@ class tx_ofdm(gr.top_block):
         self.blocks_repack_bits_bb_1_0 = blocks.repack_bits_bb(8, 1, packet_length_tag_key, False, gr.GR_LSB_FIRST)
         self.blocks_repack_bits_bb_1 = blocks.repack_bits_bb(8, payload_mod.bits_per_symbol(), packet_length_tag_key, False, gr.GR_LSB_FIRST)
         self.blocks_multiply_const_vxx_0 = blocks.multiply_const_cc(0.05)
-        self.blocks_file_source_0 = blocks.file_source(gr.sizeof_char*1, '/mnt/FlaaSh/Projects/BackEnd/Express/ees-grad-backend/server/utils/results.json', False, 0, 0)
+        self.blocks_file_source_0 = blocks.file_source(gr.sizeof_char*1, '/mnt/FlaaSh/Projects/BackEnd/Express/evac-system/server/utils/results.json', False, 0, 0)
         self.blocks_file_source_0.set_begin_tag(pmt.PMT_NIL)
         self.blocks_file_sink_0_0 = blocks.file_sink(gr.sizeof_char*1, 'data_tx.txt', False)
         self.blocks_file_sink_0_0.set_unbuffered(False)
